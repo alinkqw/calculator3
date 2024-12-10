@@ -1,0 +1,98 @@
+body {
+    font-family: Arial, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    background-color: #f1f1f1;
+  }
+  
+  .calculator {
+    width: 420px;
+    height: 490px;
+    background-color: #e6f7ff;
+    border-radius: 10px;
+  }
+  
+  .display {
+    background-color: white;
+    padding: 20px;
+    text-align: right;
+    font-size: 1.5rem;
+    border: 4PX SOLID GREY;
+    border-radius: 1vh;
+    width: 350px;
+    margin-left: 10px;
+    margin-top: 10px;
+  }
+  
+  .display .memory {
+    font-size: 0.8rem;
+    color: #444343;
+    display: flex;
+    align-items: start;
+    justify-content: start;
+  }
+  
+  .buttons {
+    display: grid;
+    grid-template-columns: repeat(6, 1fr);
+    grid-template-rows: repeat(5, 1fr);
+    gap: 5px;
+    padding: 10px;
+    margin-top: 20px;
+    color: white;
+  }
+  
+  button {
+    padding: 15px;
+    font-size: 1rem;
+    border: 1px solid rgb(189, 189, 189);
+    border-radius: 5px;
+    cursor: pointer;
+    height: 1fr;
+    color: rgb(38, 111, 255);
+    font-size: 23px;
+    background-color: rgb(249, 240, 228);
+  }
+  
+  button.operator {
+    background-color: #626161;
+    color: white;
+  }
+  
+  button.memory {
+    background-color: #a4a3a3;
+    color: white;
+  }
+button.addthis {
+  background-color: #007bff; 
+  color: white;
+  font-size: 24px;
+  padding: 10px 20px;
+  grid-row: span 2;
+}
+
+  button.control {
+    background-color: rgb(253, 32, 32);
+    color: white;
+  }
+  
+  button.equals {
+    grid-row: span 2;
+    background-color: #007bff;
+    color: white;
+  }
+  button:active {
+    opacity: 0.8;
+  }
+  .result{
+    margin-bottom: -10px;
+    font-size: 38px
+  }
+  .result2{
+    font-size: 15px;
+    margin-top: -12px;
+  }
+  
